@@ -8,7 +8,7 @@ Desktop.ini
 .vscode/
 *.swp
 
-# PHP
+# PHP .
 vendor/
 .phpunit.result.cache
 *.log
