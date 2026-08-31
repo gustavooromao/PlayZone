@@ -10,7 +10,7 @@
 | **Tipo** | Aplicação web acadêmica (PHP puro, sem frameworks) |
 | **Objetivo** | Catalogar jogos de PC, consoles e outras plataformas, com as quatro operações de CRUD |
 
-A **PlayZone** é a zona pessoal de jogos do Gustavo Romão: cada título tem plataforma, gênero, status (Quero Jogar, Jogando, Zerado, Abandonado), nota, horas jogadas e demais dados. A interface é um painel escuro com visual gamer; o código é organizado em camadas para deixar claro o que é regra de negócio, o que é banco e o que é tela.
+A **PlayZone** é uma zona pessoal de jogos feito pelo Gustavo Romão: cada título tem plataforma, gênero, status (Quero Jogar, Jogando, Zerado, Abandonado), nota, horas jogadas e demais dados. A interface é um painel escuro com visual gamer; o código é organizado em camadas para deixar claro o que é regra de negócio, o que é banco e o que é tela.
 
 A marca aparece no cabeçalho (logo + nome), no favicon da aba do navegador e no rodapé de todas as páginas.
 
@@ -124,7 +124,7 @@ Se a senha do MySQL mudar, só `Database.php` muda. Se a tabela ganhar uma colun
 ## Estrutura de pastas
 
 ```
-GustavoR.CRUD.POO/
+PlayZone/
 ├── README.md                 ← este arquivo
 ├── index.php                 ← redireciona para public/index.php
 ├── config/
@@ -164,7 +164,7 @@ O `index.php` da **raiz** só faz `header('Location: public/index.php')`. CSS, J
 | **Separação de responsabilidades** | Conexão ≠ dados ≠ SQL ≠ tela |
 | **Injeção de dependência (simples)** | `new JogoDAO(new Database())` — o DAO não cria a conexão sozinho “escondido”; ela é passada de fora |
 
-### Encapsulamento (o ponto mais cobrado)
+### Encapsulamento
 
 Os atributos de `Jogo` são privados de propósito. Sem isso, qualquer página poderia fazer `$jogo->nota = 99` e gravar lixo no banco. Com o setter, a regra fica **num único lugar**:
 
@@ -208,7 +208,7 @@ O script `sql/criar_tabela.sql` cria o banco e a tabela vazia. Os jogos entram d
 
 ---
 
-## Frontend (o que o JavaScript faz)
+## Frontend
 
 Arquivo: `public/js/script.js` — JavaScript puro.
 
@@ -264,6 +264,6 @@ Editar e excluir seguem o mesmo desenho: a view orquestra, o Model garante os da
 ## Autor
 
 **Gustavo Romão**  
-Projeto acadêmico de Programação Orientada a Objetos — aplicação web CRUD em PHP puro.
+Projeto acadêmico de Linguagem e Técnicas de Programação
 
-**PlayZone** — sua zona de jogos, no código.
+**PlayZone** — Sua zona de jogos, no código.
