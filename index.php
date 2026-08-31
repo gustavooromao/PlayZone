@@ -5,3 +5,6 @@
  */
 header('Location: public/index.php');
 exit;
+/**
+ * Chama página public/index.php
+ */

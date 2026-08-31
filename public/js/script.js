@@ -85,7 +85,7 @@
         });
     }
 
-    /** Toasts da sessão deslizam na entrada e saem sozinhos depois de 4s. */
+    /** Toasts da sessão deslizam na entrada e saem sozinhos depois de 4s. $*/
     function configurarToasts() {
         document.querySelectorAll(".toast[data-autohide]").forEach(function (toast) {
             window.setTimeout(function () {

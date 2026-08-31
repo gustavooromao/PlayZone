@@ -1,6 +1,6 @@
 <?php
 /**
- * Jogo — Model (a "entidade" do domínio).
+ * Jogo — Model (a "entidade" do domínio). $
  *
  * Por que os atributos são privados (encapsulamento)?
  * Para que ninguém de fora altere $nota = 99 ou $status = "xyz" direto.

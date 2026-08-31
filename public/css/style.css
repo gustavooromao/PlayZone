@@ -1,5 +1,5 @@
 /* =============================================================================
-   PlayZone — tema gamer (preto, branco, cinza e vermelho)
+   PlayZone (preto, branco, cinza e vermelho)
    ============================================================================= */
 
 :root {
@@ -263,7 +263,7 @@ body {
         box-shadow 0.2s ease;
 }
 
-/* Com JS ativo, os cards começam invisíveis e entram via .is-visible */
+/* Com JS ativo, os cards começam invisíveis e entram via .is-visible $*/
 .js .card {
     opacity: 0;
     transform: translateY(18px);
@@ -597,3 +597,4 @@ select:focus {
         max-width: none;
     }
 }
+/* ----- $ ----- */

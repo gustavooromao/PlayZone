@@ -1,5 +1,5 @@
 -- =============================================================================
--- PlayZone — script de criação do banco
+-- PlayZone (script de criação do banco)
 -- Execute no phpMyAdmin (aba SQL) ou no MySQL Workbench / linha de comando.
 -- =============================================================================
 

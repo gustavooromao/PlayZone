@@ -19,7 +19,7 @@ class Database
     private ?PDO $connection = null;
 
     /**
-     * Devolve a instância PDO, criando-a na primeira chamada.
+     * Devolve a instância PDO, criando-a na primeira chamada. $
      */
     public function getConnection(): PDO
     {

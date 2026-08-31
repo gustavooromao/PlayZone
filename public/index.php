@@ -35,7 +35,7 @@ try {
     $erroConexao = $e->getMessage();
 }
 
-// Toast: lê a mensagem da sessão e apaga na hora (flash message).
+// Toast: lê a mensagem da sessão e apaga na hora (flash message). $
 $flash = $_SESSION['mensagem'] ?? null;
 unset($_SESSION['mensagem']);
 ?>

@@ -65,7 +65,7 @@ class JogoDAO
         return $ok;
     }
 
-    /** Atualiza os dados de um jogo já existente, identificado pelo id. */
+    /** Atualiza os dados de um jogo já existente, identificado pelo id. $*/
     public function atualizar(Jogo $jogo): bool
     {
         $sql = 'UPDATE jogos SET
